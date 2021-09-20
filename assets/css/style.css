@@ -1,8 +1,15 @@
+/*Fontes*/
+@font-face {
+    font-family: 'Gotich';
+    src: url('../font/alternate-gothic-no-2.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* geral */
 body{
-    background-color: #0429ff;
-    font-family: 'Roboto', sans-serif;
-    background-image: url('../img/background-stars.png');
+    background-color: rgb(255, 255, 255);
+    font-family: 'Gotich' !important;
 }
 
 label{
@@ -10,14 +17,10 @@ label{
 }
 
 
-#allCurriculo{
-    height: 1000px;
-}
-
 #curriculo{
     background-color: rgb(231, 228, 228) ;
     height: 700px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #curriculo h1{
@@ -42,12 +45,31 @@ label{
     background-color: white;
 }
 
-/*bootstrap*/
-
-.jumbotron {
-    background-image: url('../img/background-stars.png');
+#firstSection{
+    background-image: url('../img/background-stars.png') !important;
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
+}
+
+#secondSection{
+    background-color: #131E3C;
+    border-radius: 10px;
+}
+
+#secondSection p, h2{
+    color: #999C9F;
+}
+
+
+/*bootstrap*/
+
+.navbar-nav{
+    font-size: 20px;
+}
+
+.jumbotron {
+    background-color: rgba(0, 255, 255, 0);
     color: white;
     border-radius: 0px !important;
   }
@@ -60,10 +82,8 @@ label{
 
 #icone{
     width:40px;
-    
 }
 
 #iconePerfil{
     width:40px;
-    border: 2px solid #ffffff; 
 }
