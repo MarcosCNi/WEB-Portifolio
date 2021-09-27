@@ -11,6 +11,14 @@ $(document).ready(function (){
     $('#contact').click(function(){
         contact()
     })
+
+    $('#voltar').click(function(){
+        voltar()
+    })
+
+    $('#avancar').click(function(){
+        avancar()
+    })
 });
 
 function home () {

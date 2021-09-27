@@ -16,15 +16,16 @@ label{
     color: white;
 }
 
-
 #curriculo{
     background-color: rgb(231, 228, 228) ;
     height: 700px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-#curriculo h1{
+#curriculo h2{
     margin-top: 20px;
+    color: black;
 }
 
 #curriculo p{
@@ -35,6 +36,16 @@ label{
     color: black !important; 
     font-weight: bold;
     background-color: rgb(231, 228, 228);
+    box-shadow: 4px 4px 8px 0 rgba(4, 0, 49, 0.25),
+    -2px -2px 12px 0 rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#botaoMais:hover{
+    color: black !important; 
+    font-weight: bold;
+    background-color: rgb(202, 202, 202);
     box-shadow: 4px 4px 8px 0 rgba(4, 0, 49, 0.25),
     -2px -2px 12px 0 rgb(255, 255, 255);
     padding: 10px 20px;
@@ -76,14 +87,16 @@ label{
 
 .btn{
     background-color: skyblue;
+    box-shadow:0 5px 5px rgb(72, 109, 124);
+}
+
+.btn:hover{
+    background-color: rgb(89, 135, 153);
+    box-shadow:0 5px 5px rgb(37, 56, 63);
 }
 
 /*icones*/
 
-#icone{
-    width:40px;
-}
-
-#iconePerfil{
+.icone{
     width:40px;
 }
