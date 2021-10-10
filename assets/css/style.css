@@ -32,44 +32,17 @@ label{
     color: rgba(0, 0, 0, 0.822);
 }
 
-#botaoMais{
-    color: black !important; 
-    font-weight: bold;
-    background-color: rgb(231, 228, 228);
-    box-shadow: 4px 4px 8px 0 rgba(4, 0, 49, 0.25),
-    -2px -2px 12px 0 rgb(255, 255, 255);
-    padding: 10px 20px;
-    border-radius: 5px;
-}
 
-#botaoMais:hover{
-    color: black !important; 
-    font-weight: bold;
-    background-color: rgb(202, 202, 202);
-    box-shadow: 4px 4px 8px 0 rgba(4, 0, 49, 0.25),
-    -2px -2px 12px 0 rgb(255, 255, 255);
-    padding: 10px 20px;
-    border-radius: 5px;
-}
 
 #contactView{
     background-color: white;
 }
 
-#firstSection{
+#particao{
     background-image: url('../img/background-stars.png') !important;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-}
-
-#secondSection{
-    background-color: #131E3C;
-    border-radius: 10px;
-}
-
-#secondSection p, h2{
-    color: #999C9F;
 }
 
 
@@ -85,6 +58,7 @@ label{
     border-radius: 0px !important;
   }
 
+/*botões*/
 .btn{
     background-color: skyblue;
     box-shadow:0 5px 5px rgb(72, 109, 124);
@@ -93,6 +67,26 @@ label{
 .btn:hover{
     background-color: rgb(89, 135, 153);
     box-shadow:0 5px 5px rgb(37, 56, 63);
+}
+
+.mais{
+    color: black !important; 
+    font-weight: bold;
+    background-color: rgb(231, 228, 228);
+    box-shadow: 4px 4px 8px 0 rgba(4, 0, 49, 0.25),
+    -2px -2px 12px 0 rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.mais:hover{
+    color: black !important; 
+    font-weight: bold;
+    background-color: rgb(202, 202, 202);
+    box-shadow: 4px 4px 8px 0 rgba(4, 0, 49, 0.25),
+    -2px -2px 12px 0 rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 /*icones*/

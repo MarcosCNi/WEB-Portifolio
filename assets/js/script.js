@@ -11,14 +11,6 @@ $(document).ready(function (){
     $('#contact').click(function(){
         contact()
     })
-
-    $('#voltar').click(function(){
-        voltar()
-    })
-
-    $('#avancar').click(function(){
-        avancar()
-    })
 });
 
 function home () {
@@ -31,6 +23,7 @@ function about () {
         <p>Here you should see extra info</p>
     `);
 };
+
 
 function contact() {
     $('section').load('views/contact.html', function(){
