@@ -14,7 +14,11 @@ $(document).ready(function (){
 });
 
 function home () {
-    $('section').load('views/home.html');
+    $('section').load('views/home.html', function(){
+        $('#btn-curriculo').click(function(){
+            $('section').load('views/curriculo.html')
+        });
+    });
 };
 
 function about () {

@@ -7,15 +7,28 @@
 }
 
 /* geral */
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: rgb(255, 255, 255);
-    font-family: 'Gotich' !important;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 label{
     color: white;
 }
 
+h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/*Home*/
 #curriculo{
     background-color: rgb(231, 228, 228) ;
     height: 700px;
@@ -32,17 +45,22 @@ label{
     color: rgba(0, 0, 0, 0.822);
 }
 
-
-
 #contactView{
     background-color: white;
 }
 
 #particao{
+    margin: auto;
     background-image: url('../img/background-stars.png') !important;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    align-items: center;
+    max-width: 1110px;
+}
+
+nav{
+    font-family: 'Gotich' !important;
 }
 
 
@@ -93,4 +111,198 @@ label{
 
 .icone{
     width:40px;
+}
+
+.perfil{
+    
+        animation-delay: 500ms;
+        animation-duration: 1000ms;
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        top: 70px;
+        left: 50%;
+        margin-left: -90px;
+        z-index: 1;
+        display: block;
+        border-radius: 50%;
+        background-color: #ffffff;
+        padding: 5px;
+        box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 3px 10px 0 rgb(0 0 0 / 20%);
+    }
+
+/*Section Curriculo*/
+.curriculo{
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 300px) {
+    .curriculo {
+        margin-top: 100px;
+    }
+    .sobre{
+        padding: 20% 10%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .curriculo {
+        margin-top: 50px;
+    }
+    .sobre {
+    padding: 10% 5%;
+    }
+}
+
+/*Timeline*/
+.all-timeline{
+    margin: 0 auto;
+    margin-top: 64px;
+    border-radius: 10px;
+    background-color: #87CEEB;
+    background-image: linear-gradient(315deg, #0d87b8 0%, #142242 74%);
+    padding: 2rem;
+    max-width: 1110px;
+    position: relative;
+}
+
+.all-timeline .spacing{
+    height: 100px;
+}
+
+.timeline{
+    margin-top: 64px;
+}
+
+.all-timeline .center-line{
+    position: absolute;
+    height: 80%;
+    width: 4px;
+    background: #fff;
+    left: 50%;
+    top: 222px;
+    transform: translateX(-50%);
+}
+
+.all-timeline .row{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.all-timeline .row-1{
+    justify-content: flex-start;
+}
+
+.all-timeline .row-2{
+    justify-content: flex-end;
+}
+
+.all-timeline .row section{
+    color: #000;
+    background-color: white;
+    border-radius: 10px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+
+.all-timeline .row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: 20px;
+    transform: rotate(45deg);
+}
+
+.row-1 section::before{
+    right: -7px;
+}
+
+.row-2 section::before{
+    left: -7px;
+}
+
+.row section .details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row section .details .title{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.row section p{
+    margin: 10px 0 17px 0;
+}
+
+/*Icone Timeline*/
+.row section .icon,
+.center-line .scroll-icon{
+    position: absolute;
+    background: #7dbfda;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 0 0 0 4px #87CEEB, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+
+.center-line .scroll-icon{
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+}
+
+.row-1 section .icon{
+    top: 7px;
+    right: -60px;
+}
+
+.row-2 section .icon{
+    top: 7px;
+    left: -60px;
+}
+
+@media(max-width: 772px){
+    .all-timeline .center-line{
+        left: 40px;
+    }
+    .all-timeline .row{
+        margin: 30px 0 3px 60px;
+    }
+    .all-timeline .row section{
+        width: 100%;
+    }
+    .row-1 section::before{
+        left: -7px;
+    }
+    .row-1 section .icon{
+        left: -72px;
+    }
+    .row-2 section .icon{
+        left: -72px;
+    }
+}
+
+@media(max-width: 1100px){
+    .all-timeline .center-line{
+        top: 280px;
+    }
+}
+@media(max-width: 720px){
+    .all-timeline .center-line{
+        top: 330px;
+    }
+}
+@media(max-width: 518px) {
+    .all-timeline .center-line{
+        top: 430px;
+    }
 }
